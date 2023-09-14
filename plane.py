@@ -34,7 +34,7 @@ for x, y, span, elevation in zip(x_coords, y_coords, span, elevation):
     # Iterate through the lists of X coordinates (x_coords), Y coordinates (y_coords),
     # widths (span), and heights (elevation) simultaneously using the zip function.
     # For each set of coordinates and dimensions, create a Rectangle patch object and add it to the plot.
-    rect = patches.Rectangle((x - widspanth / 2, y - elevation / 2), span, elevation, linespan=1, edgecolor='blue', facecolor='none')
+    rect = patches.Rectangle((x - span / 2, y - elevation / 2), span, elevation, linespan=1, edgecolor='blue', facecolor='none')
     ax.add_patch(rect)
 
 # Set axis labels and title
